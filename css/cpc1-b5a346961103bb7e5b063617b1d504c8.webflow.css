@@ -1,0 +1,856 @@
+:root {
+  --dark-orange: #f09320;
+  --dark-grey: #1d1d1d;
+  --white: white;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: var(--dark-orange);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  inset: 0% 0% auto;
+}
+
+.nav-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.brand {
+  height: 100%;
+}
+
+.brand.w--current:hover {
+  opacity: .9;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.section-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.section-wrapper.hero {
+  background-image: url('../images/cardrona-waste-management-plant-1.jpg');
+  background-position: 50% 13%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 44vw;
+  max-height: 690px;
+  margin-top: 80px;
+}
+
+.section-wrapper.hero.other-pages {
+  background-position: 50% 40%;
+  height: 50vh;
+}
+
+.section-wrapper.p-both {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.section-wrapper.pre-footer {
+  background-image: url('../images/Concrete.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 55vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.section-wrapper.p-bottom {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.generic-content-wrapper {
+  width: 90vw;
+  max-width: 1100px;
+}
+
+.generic-content-wrapper.wide {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: none;
+  display: flex;
+}
+
+.generic-content-wrapper.full-width {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: none;
+  display: flex;
+}
+
+.generic-content-wrapper.centered {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+._5050-grid {
+  grid-template-rows: auto;
+  grid-template-columns: .75fr 1fr;
+}
+
+._5050-grid.wide {
+  width: 100%;
+}
+
+.grid-content-wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.grid-content-wrapper.side-margin {
+  justify-content: center;
+  margin-left: 5vw;
+}
+
+.h {
+  color: var(--dark-grey);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 3.2em;
+  line-height: 1.2em;
+}
+
+.h._3 {
+  font-size: 1.6em;
+}
+
+.h._3.white {
+  color: var(--white);
+}
+
+.h._3.white.med-weight {
+  font-weight: 500;
+}
+
+.h._2 {
+  font-size: 2.5em;
+}
+
+.h._2.orange-bg {
+  background-color: var(--dark-orange);
+  margin-bottom: 2vh;
+  padding: 7px 25px;
+}
+
+.h._4 {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.h._4.white {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.paragraph {
+  color: var(--dark-grey);
+  text-align: left;
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.paragraph.small {
+  font-size: .9em;
+}
+
+.paragraph.small.white {
+  color: var(--white);
+}
+
+.paragraph.small.copyright {
+  color: #555;
+}
+
+.paragraph.bold {
+  font-weight: 700;
+}
+
+.paragraph.white {
+  color: var(--white);
+}
+
+.paragraph-wrapper.p-3vh {
+  margin-bottom: 3vh;
+}
+
+.paragraph-wrapper.p-1vh {
+  z-index: 99;
+  margin-bottom: 1vh;
+  position: static;
+}
+
+.button {
+  background-color: var(--dark-grey);
+  padding: 14px 37px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.button:hover {
+  opacity: .85;
+}
+
+.nav-link {
+  color: var(--dark-grey);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: Montserrat, sans-serif;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--white);
+}
+
+.nav-link.w--current {
+  opacity: .35;
+  color: var(--white);
+}
+
+.nav-link.contact {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+.nav-link.contact:hover {
+  background-color: var(--white);
+  opacity: 1;
+  color: var(--dark-grey);
+}
+
+.services-grid {
+  grid-column-gap: 90px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.services-grid-content-wrapper {
+  align-items: flex-start;
+  display: flex;
+}
+
+.services-grid-content-wrapper.image {
+  height: 30vh;
+}
+
+.services-grid-content-wrapper.image.industrial {
+  background-image: url('../images/kmart-dunedin-2.jpg');
+  background-position: 50% 30%;
+  background-size: cover;
+}
+
+.services-grid-content-wrapper.image.civil {
+  background-image: url('../images/cardrona-waste-management-plant-14.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-grid-content-wrapper.image.architecture {
+  background-image: url('../images/marina-apartments-10.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-grid-content-wrapper.body {
+  flex-direction: column;
+  margin-top: 3vh;
+}
+
+.services-grid-content-wrapper.spacer {
+  background-image: url('../images/pexels-adrien-olichon-3709404-1.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  display: none;
+}
+
+.heading-wrapper.m-1vh {
+  margin-bottom: 1vh;
+}
+
+.heading-wrapper.m-2vh {
+  margin-bottom: 2vh;
+}
+
+.heading-wrapper.m-3vh {
+  margin-bottom: 3vh;
+}
+
+.grid {
+  grid-template-rows: auto;
+}
+
+.grid-large-image {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.grid-large-image-wrapper {
+  background-image: url('../images/pexels-adrien-olichon-3709404-1.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  max-width: 900px;
+  height: 38vw;
+  max-height: 550px;
+}
+
+.grid-large-image-wrapper.about-image {
+  background-image: url("https://cdn.prod.website-files.com/68b144122839ee2d52166589/68b144122839ee2d521665d4_hanley's%20farm%20primary%20school-14.jpg");
+  background-position: 50% 30%;
+}
+
+.footer {
+  background-color: var(--dark-grey);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7vh;
+  padding-bottom: 4vh;
+  display: flex;
+}
+
+.footer-content-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  display: flex;
+}
+
+.footer-content-item {
+  width: 25%;
+  padding-right: 0;
+}
+
+.footer-content-item.wide {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 3vh;
+  display: flex;
+}
+
+.footer-brand-wrapper {
+  width: 140px;
+}
+
+.footer-brand-wrapper:hover {
+  opacity: .85;
+}
+
+.projects-slider {
+  background-color: #0000;
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+}
+
+.slide-nav {
+  display: none;
+}
+
+.slider-arrow {
+  background-color: var(--dark-grey);
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: flex;
+  position: absolute;
+  inset: auto 50px 0% auto;
+}
+
+.slider-arrow:hover {
+  opacity: .95;
+}
+
+.slider-arrow.back {
+  margin: 0;
+  right: 150px;
+}
+
+.project-slide {
+  width: 100%;
+  height: 100%;
+  margin-right: 2.5vw;
+}
+
+.mask {
+  width: 27vw;
+  height: 40vw;
+  margin-left: 5vw;
+  padding-bottom: 70px;
+  overflow: visible;
+}
+
+.project-slider-content-wrapper {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/pexels-adrien-olichon-3709404-1.jpg');
+  background-position: 0 0, 50%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.project-slider-content-wrapper.cardrona {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/cardrona-waste-management-plant-18.jpg');
+}
+
+.project-slider-content-wrapper.cromwell {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/cromwell-locations-24.jpg');
+}
+
+.project-slider-content-wrapper.fairfield {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/fairfield-industrial-units-19.jpg');
+}
+
+.project-slider-content-wrapper.hanleys {
+  background-image: linear-gradient(to top, #00000059, #0000), url("https://cdn.prod.website-files.com/68b144122839ee2d52166589/68b144122839ee2d521665db_hanley's%20farm%20primary%20school-1.jpg");
+}
+
+.project-slider-content-wrapper.kmart {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/kmart-dunedin-2.jpg');
+}
+
+.project-slider-content-wrapper.lot-40 {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/lot-40-6.jpg');
+}
+
+.project-slider-content-wrapper.marina {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/marina-apartments-13.jpg');
+}
+
+.project-slider-content-wrapper.mitre-10 {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/mitre-10-2.jpg');
+}
+
+.project-slider-content-wrapper.qt-street {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/queenstown-street-upgrades-22.jpg');
+}
+
+.project-slider-content-wrapper.quest {
+  background-image: linear-gradient(to top, #00000059, #0000), url('../images/quest-apartments-10.jpg');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+}
+
+.image-2 {
+  width: 30px;
+  height: 30px;
+}
+
+.project-content-wrapper {
+  z-index: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  position: relative;
+}
+
+.project-lightbox-link {
+  z-index: 2;
+  position: absolute;
+  inset: 0%;
+}
+
+.field-label {
+  color: var(--dark-grey);
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+}
+
+.text-field {
+  color: var(--dark-grey);
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  min-height: 43px;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.recaptcha {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-details-grid {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.contact-grid-content-wrapper {
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: flex;
+}
+
+.contact-grid-content-wrapper:hover {
+  opacity: .85;
+}
+
+.contact-grid-content-wrapper.hide {
+  display: none;
+}
+
+.contact-icon-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+}
+
+.project-overlay {
+  z-index: 0;
+  opacity: 0;
+  background-color: #1d1d1d33;
+  position: absolute;
+  inset: 0%;
+}
+
+.form, .form-block {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .section-wrapper.hero {
+    height: 60vh;
+  }
+
+  .section-wrapper.p-both {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+  }
+
+  .section-wrapper.p-bottom {
+    padding-top: 10vh;
+  }
+
+  .h._1 {
+    font-size: 2.7em;
+  }
+
+  .h._3 {
+    font-size: 1.4em;
+  }
+
+  .h._2 {
+    font-size: 2.3em;
+  }
+
+  .paragraph {
+    font-size: 1em;
+  }
+
+  .services-grid {
+    grid-column-gap: 20px;
+  }
+
+  .services-grid-content-wrapper.spacer {
+    display: none;
+  }
+
+  .grid-large-image {
+    align-items: center;
+  }
+
+  .footer-content-item {
+    width: 33.333%;
+  }
+
+  .projects-slider {
+    height: 64vw;
+  }
+
+  .slider-arrow {
+    right: 20px;
+  }
+
+  .slider-arrow.back {
+    right: 120px;
+  }
+
+  .mask {
+    width: 41vw;
+    height: 64vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-wrapper.p-both {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .section-wrapper.p-bottom {
+    padding-top: 5vh;
+  }
+
+  ._5050-grid {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-content-wrapper {
+    margin-bottom: 0;
+  }
+
+  .grid-content-wrapper.contact {
+    margin-bottom: 3vh;
+  }
+
+  .h._1 {
+    font-size: 2.6em;
+  }
+
+  .h._2.orange-bg {
+    text-align: center;
+    font-size: 2.3em;
+  }
+
+  .paragraph.bold.centered {
+    text-align: center;
+  }
+
+  .button {
+    font-size: .9em;
+  }
+
+  .services-grid {
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-grid-content-wrapper.spacer {
+    background-color: #0000;
+    background-image: none;
+    height: 20px;
+    display: none;
+  }
+
+  .services-grid-content-wrapper.spacer.landscape {
+    display: block;
+  }
+
+  .footer-content-item {
+    width: 50%;
+  }
+
+  .projects-slider, .mask {
+    height: 64vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-container {
+    width: 95vw;
+  }
+
+  .brand {
+    padding-left: 0;
+  }
+
+  .section-wrapper.hero {
+    height: 40vh;
+  }
+
+  .section-wrapper.p-both {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+
+  ._5050-grid {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .h._1 {
+    font-size: 2.4em;
+  }
+
+  .paragraph.small.white.centered {
+    text-align: center;
+    font-size: .8em;
+  }
+
+  .paragraph.small.copyright {
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid-content-wrapper.spacer {
+    height: 5vh;
+    display: block;
+  }
+
+  .services-grid-content-wrapper.spacer.landscape {
+    display: none;
+  }
+
+  .grid-large-image {
+    justify-content: flex-start;
+    padding-left: 5vw;
+  }
+
+  .grid-large-image-wrapper {
+    width: 90vw;
+    height: 69vw;
+  }
+
+  .footer-content-wrapper {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  .footer-content-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .projects-slider {
+    height: 135vw;
+  }
+
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+  }
+
+  .slider-arrow.back {
+    right: 90px;
+  }
+
+  .mask {
+    width: 86vw;
+    height: 135vw;
+  }
+
+  .image-2 {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+#w-node-_59f616fe-fd2c-3d78-99ae-26a8132102ba-52166587, #w-node-c1b255e5-0e60-ed67-197b-1c7ac7ed906e-52166587, #w-node-_22782ad5-f8ae-b62c-1314-1cb96f1dc755-52166587, #w-node-_53e0365b-eab4-9030-242c-13656eca5aa7-52166587, #w-node-ebe36210-267d-fbca-98ad-8d38bdd17417-52166587, #w-node-cbe89aa0-1c46-c1dd-7010-db19f332c0ef-52166587, #w-node-b106e38b-bdb3-6cf3-dc30-179861f51ddf-52166587, #w-node-c3cdfd36-b869-6773-d319-0ea1a5f6c572-52166587, #w-node-_158cf9bb-d51f-6119-6caa-2b008954e1c3-52166587, #w-node-_3850c86a-bd76-89eb-3bf3-ad2b270fb863-52166587, #w-node-d68c3157-779d-c6f4-f453-65cffbdb074f-52166587, #w-node-f81e26e3-dc5f-53e1-58ae-8a77e908bc8f-52166587, #w-node-f7c410e2-2949-3d62-5e6f-b3596d99c55e-52166587, #w-node-_59f616fe-fd2c-3d78-99ae-26a8132102ba-52166588, #w-node-c1b255e5-0e60-ed67-197b-1c7ac7ed906e-52166588 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-_22782ad5-f8ae-b62c-1314-1cb96f1dc755-52166587, #w-node-cbe89aa0-1c46-c1dd-7010-db19f332c0ef-52166587 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_158cf9bb-d51f-6119-6caa-2b008954e1c3-52166587 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+}
+
+
